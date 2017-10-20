@@ -1,0 +1,13 @@
+Package: mapNL
+Type: Package
+Title: Collection of datasets from Dutch open data sources
+Version: 0.1.0
+Author: nl-hugo <info@hugojanssen.nl>
+Description: This package contains tidied data from various open data sets. 
+    Data contains Dutch geospatial properties.
+Depends:
+    R (>= 3.3.0)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+URL: http://github.com/nl-hugo/mapNL
