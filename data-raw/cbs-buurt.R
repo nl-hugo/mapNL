@@ -31,11 +31,13 @@ layer_WGS84 <- function(layer) {
 # save map
 save_map <- function(layer, obj) {
   id <- names(obj@data[1])
+  objname <- paste0(layer, "_", year)
   map <- fortify(obj, region = id) %>%
     left_join(obj@data, by = c("id" = id)) %>%
     mutate(group = as.character(group))
   names(map) <- tolower(names(map))
-  save("map", file = paste0("data/", layer, "_2017.rdata"))
+  assign(objname, map)
+  save(list = objname, file = paste0("data/", objname, ".rdata"))
 }
 
 # get all layers from shapefile and save (this may take a while)
