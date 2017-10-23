@@ -1,10 +1,10 @@
 Package: mapNL
 Type: Package
-Title: Collection of datasets from Dutch open data sources
+Title: Collection of Dutch geocoded data sets and maps
 Version: 0.1.0
 Author: nl-hugo <info@hugojanssen.nl>
 Description: This package contains tidied data from various open data sets. 
-    Data contains Dutch geospatial properties.
+    All data contains Dutch geographical dimensions or geocoded data.
 Depends:
     R (>= 3.3.0)
 License: MIT

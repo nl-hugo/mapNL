@@ -2,6 +2,7 @@
 
 This package contains the following data sets:
 
+* `cities`: cities with their administrative regions
 * `gem_2017`: borders and data of Dutch municipalities
 * `wijk_2017`: borders and data of Dutch districts
 * `buurt_2017`: borders and data of Dutch neighbourhoods
