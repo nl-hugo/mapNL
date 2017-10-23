@@ -4,7 +4,7 @@
 \name{buurt_2017}
 \alias{buurt_2017}
 \title{Buurt}
-\format{An object of class \code{data.frame} with 3558927 rows and 45 columns.}
+\format{An object of class \code{data.frame} with 691509 rows and 45 columns.}
 \source{
 https://www.cbs.nl/-/media/_pdf/2017/36/buurt_2017.zip
 }
@@ -12,7 +12,7 @@ https://www.cbs.nl/-/media/_pdf/2017/36/buurt_2017.zip
 buurt_2017
 }
 \description{
-Borders and data of Dutch neighbourhoods (buurten) as of 2017.
+Simplified and reprojected from `Amersfoort / RD New` to `WGS84`.
 }
 \details{
 Reprojected from `Amersfoort / RD New` to `WGS84`.

@@ -4,7 +4,7 @@
 \name{gem_2017}
 \alias{gem_2017}
 \title{Gemeente}
-\format{An object of class \code{data.frame} with 1566721 rows and 39 columns.}
+\format{An object of class \code{data.frame} with 167745 rows and 39 columns.}
 \source{
 https://www.cbs.nl/-/media/_pdf/2017/36/buurt_2017.zip
 }
@@ -15,7 +15,7 @@ gem_2017
 Borders and data of Dutch municipalities (gemeenten) as of 2017.
 }
 \details{
-Reprojected from `Amersfoort / RD New` to `WGS84`.
+Simplified and reprojected from `Amersfoort / RD New` to `WGS84`.
 
 Contains all properties as described in
 [Toelichting wijk en buurtkaart 2015-2016-2017](https://www.cbs.nl/-/media/_pdf/2017/36/2017ep37%20toelichting%20wijk%20en%20buurtkaart%202017.pdf) (Dutch only)

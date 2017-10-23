@@ -1,4 +1,5 @@
 library(rgdal)
+library(rgeos)
 library(ggplot2)
 library(dplyr)
 
@@ -16,7 +17,7 @@ if (!file.exists(dsn)) {
   unzip(tmp, exdir = dsn)
 }
 
-# read layer and reproject to WGS84
+# read layer, reproject and simplify to WGS84
 layer_WGS84 <- function(layer) {
   nl <-
     readOGR(
@@ -25,7 +26,9 @@ layer_WGS84 <- function(layer) {
       verbose = FALSE,
       stringsAsFactors = FALSE
     ) %>% subset(WATER == "NEE")
-  spTransform(nl, CRS("+proj=longlat +ellps=WGS84 +datum=WGS84"))
+  wgs84 <- spTransform(nl, CRS("+proj=longlat +ellps=WGS84 +datum=WGS84"))
+  nls <- gSimplify(wgs84, tol = 1e-4, topologyPreserve = TRUE)
+  sp::SpatialPolygonsDataFrame(nls, nl@data)
 }
 
 # save map
